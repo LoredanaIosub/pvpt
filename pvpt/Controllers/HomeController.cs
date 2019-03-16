@@ -26,5 +26,27 @@ namespace pvpt.Controllers
 
             return View();
         }
+
+        public ActionResult Eat()
+        {
+            ViewBag.Message = "Mancare buna.";
+
+            return View();
+        }
+
+        public ActionResult Relax()
+        {
+            ViewBag.Message = "Relaxare";
+
+            return View();
+        }
+
+        public ActionResult Travel()
+        {
+            ViewBag.Message = "Calatorie";
+
+            return View();
+        }
+
     }
 }
