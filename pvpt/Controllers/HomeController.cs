@@ -48,5 +48,19 @@ namespace pvpt.Controllers
             return View();
         }
 
+        public ActionResult Activities()
+        {
+            ViewBag.Message = "Activități";
+
+            return View();
+        }
+
+        public ActionResult Play()
+        {
+            ViewBag.Message = "Play";
+
+            return View();
+        }
+
     }
 }

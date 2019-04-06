@@ -177,6 +177,8 @@
     <Content Include="Views\Home\Eat.cshtml" />
     <Content Include="Views\Home\Relax.cshtml" />
     <Content Include="Views\Home\Travel.cshtml" />
+    <Content Include="Views\Home\Activities.cshtml" />
+    <Content Include="Views\Home\Play.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

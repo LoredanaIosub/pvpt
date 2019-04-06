@@ -28,13 +28,28 @@
                 <!--@Html.ActionLink("Welcome to Brasov", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })-->
             </div>
             <div class="navbar-collapse collapse">
-                <ul  class="nav navbar-nav">
-                    <li style="margin:10px 20px; padding:5px 5px; font-family:'Brush Script MT',cursive;">@Html.ActionLink("HOME", "Index", "Home")</li>
-                    <li style="margin:10px 20px; padding:5px 5px; font-family:'Brush Script MT',cursive;">@Html.ActionLink("ABOUT ", "About", "Home")</li>
-                    <li style="margin:10px 20px; padding:5px 5px; font-family:'Brush Script MT',cursive;">@Html.ActionLink("TRAVEL", "Travel", "Home")</li>
-                    <li style="margin:10px 20px; padding:5px 5px; font-family:'Brush Script MT',cursive;">@Html.ActionLink("EAT", "Eat", "Home")</li>
-                    <li style="margin:10px 20px; padding:5px 5px; font-family:'Brush Script MT',cursive;">@Html.ActionLink("RELAX", "Relax", "Home")</li>
-                    <li style="margin:10px 20px; padding:5px 5px;">@Html.ActionLink("CONTACT", "Contact", "Home")</li>
+                <ul class="nav navbar-nav">
+                    <li style="margin:10px 20px; padding:5px 5px;">@Html.ActionLink("Acasă", "Index", "Home")</li>
+                    <li style="margin:10px 20px; padding:5px 5px;">@Html.ActionLink("Despre", "About", "Home")</li>
+                    <li style="margin:10px 20px; padding:5px 5px;">@Html.ActionLink("Călătorie", "Travel", "Home")</li> 
+
+                    
+                        
+                    <li class="@Html.ActionLink("Activități", "Activities", "Home") dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Relaxare", "Relax", "Home")</li>
+                            <li>@Html.ActionLink("Restaurante", "Eat", "Home")</li>
+                            <li>@Html.ActionLink("Play", "Play", "Home")</li>
+                        </ul>
+                    </li>
+
+                    @*<li style="margin:10px 20px; padding:5px 5px;">@Html.ActionLink("EAT", "Eat", "Home")</li>
+        <li style="margin:10px 20px; padding:5px 5px;">@Html.ActionLink("RELAX", "Relax", "Home")</li>*@
+                    <li style="margin:10px 20px; padding:5px 5px;">@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -43,7 +58,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Platformă versatilă pentru turiști</p>
         </footer>
     </div>
 
