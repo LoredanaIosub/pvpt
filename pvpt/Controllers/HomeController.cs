@@ -62,5 +62,25 @@ namespace pvpt.Controllers
             return View();
         }
 
+        public ActionResult Events()
+        {
+            ViewBag.Message = "Evenimente";
+
+            return View();
+        }
+
+        public ActionResult News()
+        {
+            ViewBag.Message = "Noutati";
+
+            return View();
+        }
+
+        public ActionResult Opinion()
+        {
+            ViewBag.Message = "Parerea ta!";
+
+            return View();
+        }
     }
 }
