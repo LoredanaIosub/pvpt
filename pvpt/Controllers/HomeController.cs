@@ -9,7 +9,7 @@ namespace pvpt.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {//comentariu
+        {   //comentariu
             return View();
         }
 
