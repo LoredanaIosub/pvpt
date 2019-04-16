@@ -1,0 +1,8 @@
+﻿Enable-Migrations -ContextType BdContext -MigrationsDirectory Migrations\BD 
+//executata doar o data
+
+add-migration -ConfigurationTypeName pvpt.Migrations.BD.Configuration "InitialCreate" 
+//executata cand modelul de schimba
+
+update-database -ConfigurationTypeName pvpt.Migrations.BD.Configuration 
+//executata la orice moment

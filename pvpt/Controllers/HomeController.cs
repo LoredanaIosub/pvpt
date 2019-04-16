@@ -76,11 +76,11 @@ namespace pvpt.Controllers
             return View();
         }
 
-        public ActionResult Opinion()
+        /*public ActionResult Opinion()
         {
             ViewBag.Message = "Parerea ta!";
 
             return View();
-        }
+        }*/
     }
 }
