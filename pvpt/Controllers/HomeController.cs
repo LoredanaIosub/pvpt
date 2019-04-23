@@ -15,7 +15,7 @@ namespace pvpt.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Descoperă frumusețea Brașovului";
 
             return View();
         }
