@@ -43,7 +43,7 @@ namespace pvpt.Controllers
 
         public ActionResult Travel()
         {
-            ViewBag.Message = "Calatorie";
+            ViewBag.Message = "Bucură-te de experiențe minunate";
 
             return View();
         }

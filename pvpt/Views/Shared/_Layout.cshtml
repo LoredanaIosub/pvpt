@@ -19,7 +19,7 @@
         }
 
         .dropdown-toggle .dropdown-menu .dropdown:hover {
-            background-color: lavender;
+            background-color: #E6E6FA;
             border-radius: 5%;
             padding: 5px 5px;
             margin: 10px 10px;
@@ -30,7 +30,16 @@
             border-radius: 5%;
         }
 
+
+        
     </style>
+
+    <script>
+        $('a').click(function(e){
+     if ($(e.target).hasClass("dropdown-toggle"))
+         return false;
+    });
+    </script>
 
     
 
@@ -54,15 +63,18 @@
                     <li style="margin:10px 20px; padding:5px 5px;">@Html.ActionLink("Călătorie", "Travel", "Home")</li>
 
                     <li class="dropdown" style="margin-top:10px; padding:5px 5px;">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activități<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Relaxare", "Relax", "Home")</li>
-                            <li>@Html.ActionLink("Restaurante", "Eat", "Home")</li>
-                            <li>@Html.ActionLink("Play", "Play", "Home")</li>
-                        </ul>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activități<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Relaxare", "Relax", "Home")</li>
+                        <li>@Html.ActionLink("Restaurante", "Eat", "Home")</li>
+                        <li>@Html.ActionLink("Play", "Play", "Home")</li>
+                    </ul>
                     </li>
+                    
                     <li style="margin:10px 20px; padding:5px 5px;">@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
+
+
             </div>
         </div>
     </div>

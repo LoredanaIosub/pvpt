@@ -12,18 +12,25 @@
             font-size: 17px;
         }
 
-        .jumbotron {
-            margin-top: 70px;
-        }
-
+    .jumbotron { 
+        margin-top: 50px; 
+        background-image: url("https://i.imgur.com/9hY0HGF.jpg"); 
+        background-size: cover; 
+        background-position: center; /*centrarea imaginii*/ 
+        height: 300px; 
         
+
+    }
+
     </style>
+
 </head>
 <body>
-    <div class="jumbotron text-center">
-        <h2 class="text-primary">@ViewBag.Message</h2>
-    </div>
+    
     <div class="container">
+        <div class="jumbotron text-center">
+            @*<h2 class="text-primary">@ViewBag.Message</h2>*@
+        </div>
         <div class="row">
             <div class="col-sm-4">
                 <p>
@@ -103,18 +110,19 @@
                     și modern (construcțiile de după 1980).
                 </p><br />
 
-                    <div class="thumb tright">
-                        <div class="thumbinner" style="width:252px;">
-                            <a href="/wiki/Fi%C8%99ier:Brasov,_porta_ecaterineu_03.JPG" class="image">
-                                <img style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;" alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/09/Brasov%2C_porta_ecaterineu_03.JPG/250px-Brasov%2C_porta_ecaterineu_03.JPG" decoding="async" width="250" height="333" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/09/Brasov%2C_porta_ecaterineu_03.JPG/375px-Brasov%2C_porta_ecaterineu_03.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/09/Brasov%2C_porta_ecaterineu_03.JPG/499px-Brasov%2C_porta_ecaterineu_03.JPG 2x" data-file-width="2112" data-file-height="2816">
-                            </a>
-                            <div class="thumbcaption">
-                                Poarta Ecaterinei, în stil clasic
-                            </div>
+                <div class="thumb tright">
+                    <div class="thumbinner" style="width:252px;">
+                        <a href="/wiki/Fi%C8%99ier:Brasov,_porta_ecaterineu_03.JPG" class="image">
+                            <img style="border: 1px solid #ddd; border-radius: 4px; padding: 5px;" alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/09/Brasov%2C_porta_ecaterineu_03.JPG/250px-Brasov%2C_porta_ecaterineu_03.JPG" decoding="async" width="250" height="333" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/09/Brasov%2C_porta_ecaterineu_03.JPG/375px-Brasov%2C_porta_ecaterineu_03.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/09/Brasov%2C_porta_ecaterineu_03.JPG/499px-Brasov%2C_porta_ecaterineu_03.JPG 2x" data-file-width="2112" data-file-height="2816">
+                        </a>
+                        <div class="thumbcaption">
+                            Poarta Ecaterinei, în stil clasic
                         </div>
                     </div>
+                </div>
 
-                <p><br />
+                <p>
+                    <br />
                     <b class="bg-info">În acest oraș</b> a fost confecționată și instalată o copie a „Statuii Lupoaicei”
                     („Lupa Capitolina”), simbolul latinității poporului român.
                 </p>
